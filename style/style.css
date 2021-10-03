@@ -1,46 +1,242 @@
 body{
-    background-repeat: no-repeat;
-    background-image: url(photos/codback.png);
-    width: 100%;
-    height: 720px;
-    padding: 0;
+    background-color: white;
+    border-radius:initial;
+    padding: 0px;
     margin: 0;
-    overflow: hidden;
+    height: auto;
+    top: auto;
+    max-width: 375px;
 }
-
+.trans{
+    background-color: white;
+}
+.logo{
+    left: 38%;
+    top: 0px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+.scroll-container,
+.first-page,
+.about,
+.endCard{
+    height: 667px;
+    max-width: 375px;
+}
+.scroll-container{
+    overflow: auto;
+    scroll-snap-type:y mandatory;
+}
+.first-page{
+    background-color: black;
+    scroll-snap-align: start;
+    top: 767px;
+}
+.about{
+    position: relative;
+    background-color: white;
+    text-align: center;
+    scroll-snap-align: start;
+    top: 5px;
+}.endCard{
+    position: relative;
+    text-align: center;
+    background-color: #000066;
+    scroll-snap-align: start;
+    top: 10px;
+}
 h1{ 
-    font-size: 5em;
+    font-size: 3em;
     margin: 0;
     padding: 0;
     text-align: center;
     position: relative;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.about h1{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+}
+.about h2{
+    text-align: center;
+    color: #60148c;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.about h3{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.button-stat{
+    top: 65px;
+    position: relative;
+}
+.information{
+    cursor: pointer;
+    position: relative;
+    background-color:#0f0db5;
+    width: 200px;
+    height: 35px;
+    color: white;
+    border-radius: 4px;
+    transition: ease-out 0.3;
+    font-size: 1rem;
+    z-index: 1;
+    outline: none;
+    border: 3px solid #0f0db5;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.endCard h4{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family:Arial, sans-serif;
+}
+.endCard h3{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family:Arial, sans-serif;
+}
+.over{
+    cursor: pointer;
+    border-radius: 4px;
+    border: 3px solid #000066;
+    background-color: #000066;
+    color: white;
+    font-size: 15px;
+    font-family:Arial, sans-serif;
+    text-align: center;
+}
+a{
+    font-size: 20px;
 }
 .container{
-    text-align: center;
     position: relative;
-    top: 40%;
+    font-size: 65px;
+    text-align: center;
+    top: 0px;
 }
-li{
-    display: inline-block;
-}
-li a{
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    font-family: Source Sans Pro;
-    font-weight: lighter;
-    font-size: 35px;
-    padding: 0 100px;
+.cool-link{
+    cursor: pointer;
+    position: relative;
+    background-color:initial;
+    width: 300px;
+    height: 70px;
+    color: white;
+    border-radius: 4px;
+    transition: ease-out 0.3;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid white;
+    z-index: 1;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .cool-link::after{
     content: '';
     display: block;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: white;
     transition: width .3s;
 }
 .cool-link:hover::after{
     width: 100%;
     transition: width .3s;
+}
+.social-menu ul {
+    position:relative;
+    top:25px;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+.social-menu ul li .fab {
+    color: black;
+    font-size: 38px;
+    line-height: 50px;
+    transition: 0.5s;
+}
+.social-menu ul li .fab:hover {
+    color: #ffffff;
+}
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    transition: 0.5s;
+    transform: translate(0,0px);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -12px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #333;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #7289DA;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #010101;
+}
+.social-menu2 ul {
+    position:relative;
+    top:30px;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.social-menu2 ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+.social-menu2 ul li .fab {
+    color: white;
+    font-size: 35px;
+    line-height: 50px;
+    transition: 0.5s;
+}
+.social-menu2 ul li .fab:hover {
+    color: white;
+}
+.social-menu2 ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #000066;
+    transition: 0.5s;
+    transform: translate(0,0px);
+}
+.social-menu2 ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -12px);
+}
+.social-menu2 ul li:nth-child(1) a:hover {
+    background-color: #333;
+}
+.social-menu2 ul li:nth-child(2) a:hover {
+    background-color: #7289DA;
+}
+.social-menu2 ul li:nth-child(3) a:hover {
+    background-color: #cd201f;
+}
+.social-menu2 ul li:nth-child(4) a:hover {
+    background-color: #010101;
 }

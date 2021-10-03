@@ -8,6 +8,14 @@ body{
     margin: 0;
     padding: 0;
 }
+h1{
+    position: relative;
+    top: 15%;
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
 .first-page{
     background-color: black;
     height: 667px;

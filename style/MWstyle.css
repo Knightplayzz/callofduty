@@ -1,50 +1,67 @@
 body{
-    background-image: url(photos/mwback.png)
-}
-body{
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 720px;
-    padding: 0;
+    background-color: white;
+    border-radius:initial;
+    height: auto;
+    top: auto;
+    height: 667px;
+    max-width: 375px;
     margin: 0;
+    padding: 0;
+}
+.first-page{
+    background-color: black;
+    height: 667px;
+    max-width: 375px;
+}
+a{
+color: white;
+text-align: center;
+left: 100px;
 }
 .container{
-    text-align: center;
     position: relative;
-    top: 45%;
+    font-size: 65px;
+    text-align: center;
+    top: 0px;
 }
-li{
-    display: inline-block;
+.homepage{
+    text-align: center;
 }
-li a{
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    font-family: Source Sans Pro;
-    font-weight: lighter;
-    font-size: 35px;
-    padding: 0 50px;
+.home{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    border: 3px solid black;
+    font-size: 50px;
+}
+a{
+    font-size: 20px;
+}
+.cool-link{
+    cursor: pointer;
+    position: relative;
+    background-color:initial;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 4px;
+    transition: ease-out 0.3;
+    font-size: 20px;
+    outline: none;
+    border: 3px solid white;
+    z-index: 1;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .cool-link::after{
     content: '';
     display: block;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: white;
     transition: width .3s;
 }
 .cool-link:hover::after{
     width: 100%;
     transition: width .3s;
-}
-
-.kaas{
-    text-align: center;
-    position: relative;
-    top: 0%;
-}
-wz a{
-    position: relative;
-    font-size: 5em;
-    color: #0b0b0b;
 }

@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+    border-radius:initial;
+    padding: 0px;
+    margin: 0;
+    height: auto;
+    top: auto;
+    max-width: 375px;
+}
+.first-page{
+    background-color: white;
+    max-width: 375px;
+}
+.text{
+    color: black;
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    position: relative;
+    left: 10px;
+}
+h1{
+    text-align: center;
+}
